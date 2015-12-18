@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		422EE7071C1E553300EB76D4 /* EUExUnionPay.mm in Sources */ = {isa = PBXBuildFile; fileRef = 422EE7061C1E553300EB76D4 /* EUExUnionPay.mm */; };
+		42FFEF061C1FA0EF00294DE1 /* libUPPayPlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FFEF051C1FA0EF00294DE1 /* libUPPayPlugin.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		422EE7011C1E553300EB76D4 /* libuexUnionPay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuexUnionPay.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		422EE7041C1E553300EB76D4 /* EUExUnionPay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EUExUnionPay.h; sourceTree = "<group>"; };
+		422EE7061C1E553300EB76D4 /* EUExUnionPay.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EUExUnionPay.mm; sourceTree = "<group>"; };
+		422EE70E1C1E556D00EB76D4 /* EUExBase+Bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EUExBase+Bundle.h"; sourceTree = "<group>"; };
+		422EE70F1C1E556D00EB76D4 /* EUExBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBase.h; sourceTree = "<group>"; };
+		422EE7101C1E556D00EB76D4 /* EUExBaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBaseDefine.h; sourceTree = "<group>"; };
+		422EE7111C1E556D00EB76D4 /* EUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUtility.h; sourceTree = "<group>"; };
+		422EE7121C1E556D00EB76D4 /* WidgetOneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetOneDelegate.h; sourceTree = "<group>"; };
+		422EE7151C1E558D00EB76D4 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		422EE7161C1E558D00EB76D4 /* JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONParser.h; sourceTree = "<group>"; };
+		422EE7171C1E558D00EB76D4 /* MD5Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5Digest.h; sourceTree = "<group>"; };
+		422EE7181C1E558D00EB76D4 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		422EE7191C1E558D00EB76D4 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		422EE71A1C1E558D00EB76D4 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		422EE71B1C1E558D00EB76D4 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		422EE71C1C1E558D00EB76D4 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		422EE71D1C1E558D00EB76D4 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		422EE71E1C1E558D00EB76D4 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		422EE7291C1E569800EB76D4 /* UPPayPluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPayPluginDelegate.h; sourceTree = "<group>"; };
+		422EE72B1C1E611F00EB76D4 /* EBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBrowserView.h; sourceTree = "<group>"; };
+		422EE72C1C1E613F00EB76D4 /* EBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBrowserController.h; sourceTree = "<group>"; };
+		422EE72D1C1E615600EB76D4 /* ACEBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACEBaseViewController.h; sourceTree = "<group>"; };
+		42FFEF041C1FA0E700294DE1 /* UPPayPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPayPlugin.h; sourceTree = "<group>"; };
+		42FFEF051C1FA0EF00294DE1 /* libUPPayPlugin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUPPayPlugin.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		422EE6FE1C1E553300EB76D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42FFEF061C1FA0EF00294DE1 /* libUPPayPlugin.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		422EE6F81C1E553300EB76D4 = {
+			isa = PBXGroup;
+			children = (
+				422EE7031C1E553300EB76D4 /* EUExUnionPay */,
+				422EE7021C1E553300EB76D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		422EE7021C1E553300EB76D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				422EE7011C1E553300EB76D4 /* libuexUnionPay.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		422EE7031C1E553300EB76D4 /* EUExUnionPay */ = {
+			isa = PBXGroup;
+			children = (
+				422EE7131C1E558D00EB76D4 /* sourceCode */,
+				422EE70D1C1E556D00EB76D4 /* engineHeader */,
+				422EE7041C1E553300EB76D4 /* EUExUnionPay.h */,
+				422EE7061C1E553300EB76D4 /* EUExUnionPay.mm */,
+			);
+			path = EUExUnionPay;
+			sourceTree = "<group>";
+		};
+		422EE70D1C1E556D00EB76D4 /* engineHeader */ = {
+			isa = PBXGroup;
+			children = (
+				422EE72D1C1E615600EB76D4 /* ACEBaseViewController.h */,
+				422EE72C1C1E613F00EB76D4 /* EBrowserController.h */,
+				422EE72B1C1E611F00EB76D4 /* EBrowserView.h */,
+				422EE70E1C1E556D00EB76D4 /* EUExBase+Bundle.h */,
+				422EE70F1C1E556D00EB76D4 /* EUExBase.h */,
+				422EE7101C1E556D00EB76D4 /* EUExBaseDefine.h */,
+				422EE7111C1E556D00EB76D4 /* EUtility.h */,
+				422EE7121C1E556D00EB76D4 /* WidgetOneDelegate.h */,
+			);
+			path = engineHeader;
+			sourceTree = "<group>";
+		};
+		422EE7131C1E558D00EB76D4 /* sourceCode */ = {
+			isa = PBXGroup;
+			children = (
+				422EE7231C1E568C00EB76D4 /* libs */,
+				422EE7141C1E558D00EB76D4 /* JSON */,
+				422EE71E1C1E558D00EB76D4 /* PrefixHeader.pch */,
+			);
+			path = sourceCode;
+			sourceTree = "<group>";
+		};
+		422EE7141C1E558D00EB76D4 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				422EE7151C1E558D00EB76D4 /* JSON.h */,
+				422EE7161C1E558D00EB76D4 /* JSONParser.h */,
+				422EE7171C1E558D00EB76D4 /* MD5Digest.h */,
+				422EE7181C1E558D00EB76D4 /* NSObject+SBJSON.h */,
+				422EE7191C1E558D00EB76D4 /* NSString+SBJSON.h */,
+				422EE71A1C1E558D00EB76D4 /* SBJSON.h */,
+				422EE71B1C1E558D00EB76D4 /* SBJsonBase.h */,
+				422EE71C1C1E558D00EB76D4 /* SBJsonParser.h */,
+				422EE71D1C1E558D00EB76D4 /* SBJsonWriter.h */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		422EE7231C1E568C00EB76D4 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				42FFEF051C1FA0EF00294DE1 /* libUPPayPlugin.a */,
+				42FFEF041C1FA0E700294DE1 /* UPPayPlugin.h */,
+				422EE7291C1E569800EB76D4 /* UPPayPluginDelegate.h */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		422EE7001C1E553300EB76D4 /* EUExUnionPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 422EE70A1C1E553300EB76D4 /* Build configuration list for PBXNativeTarget "EUExUnionPay" */;
+			buildPhases = (
+				422EE6FD1C1E553300EB76D4 /* Sources */,
+				422EE6FE1C1E553300EB76D4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EUExUnionPay;
+			productName = EUExUnionPay;
+			productReference = 422EE7011C1E553300EB76D4 /* libuexUnionPay.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		422EE6F91C1E553300EB76D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = AppCan;
+				TargetAttributes = {
+					422EE7001C1E553300EB76D4 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 422EE6FC1C1E553300EB76D4 /* Build configuration list for PBXProject "EUExUnionPay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 422EE6F81C1E553300EB76D4;
+			productRefGroup = 422EE7021C1E553300EB76D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				422EE7001C1E553300EB76D4 /* EUExUnionPay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		422EE6FD1C1E553300EB76D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				422EE7071C1E553300EB76D4 /* EUExUnionPay.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		422EE7081C1E553300EB76D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		422EE7091C1E553300EB76D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		422EE70B1C1E553300EB76D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexUnionPay";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EUExUnionPay/sourceCode/libs",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_MODULE_NAME = uexUnionPay;
+				PRODUCT_NAME = uexUnionPay;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		422EE70C1C1E553300EB76D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexUnionPay";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EUExUnionPay/sourceCode/libs",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_MODULE_NAME = uexUnionPay;
+				PRODUCT_NAME = uexUnionPay;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		422EE6FC1C1E553300EB76D4 /* Build configuration list for PBXProject "EUExUnionPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				422EE7081C1E553300EB76D4 /* Debug */,
+				422EE7091C1E553300EB76D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		422EE70A1C1E553300EB76D4 /* Build configuration list for PBXNativeTarget "EUExUnionPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				422EE70B1C1E553300EB76D4 /* Debug */,
+				422EE70C1C1E553300EB76D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 422EE6F91C1E553300EB76D4 /* Project object */;
+}
