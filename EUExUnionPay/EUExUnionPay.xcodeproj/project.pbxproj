@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		422EE7071C1E553300EB76D4 /* EUExUnionPay.mm in Sources */ = {isa = PBXBuildFile; fileRef = 422EE7061C1E553300EB76D4 /* EUExUnionPay.mm */; };
+		424ACE981C23D8D000EEC1F8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424ACE971C23D8D000EEC1F8 /* Security.framework */; };
 		42FFEF061C1FA0EF00294DE1 /* libUPPayPlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FFEF051C1FA0EF00294DE1 /* libUPPayPlugin.a */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		422EE72B1C1E611F00EB76D4 /* EBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBrowserView.h; sourceTree = "<group>"; };
 		422EE72C1C1E613F00EB76D4 /* EBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBrowserController.h; sourceTree = "<group>"; };
 		422EE72D1C1E615600EB76D4 /* ACEBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACEBaseViewController.h; sourceTree = "<group>"; };
+		424ACE971C23D8D000EEC1F8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		42FFEF041C1FA0E700294DE1 /* UPPayPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPayPlugin.h; sourceTree = "<group>"; };
 		42FFEF051C1FA0EF00294DE1 /* libUPPayPlugin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUPPayPlugin.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				424ACE981C23D8D000EEC1F8 /* Security.framework in Frameworks */,
 				42FFEF061C1FA0EF00294DE1 /* libUPPayPlugin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +56,7 @@
 		422EE6F81C1E553300EB76D4 = {
 			isa = PBXGroup;
 			children = (
+				424ACE971C23D8D000EEC1F8 /* Security.framework */,
 				422EE7031C1E553300EB76D4 /* EUExUnionPay */,
 				422EE7021C1E553300EB76D4 /* Products */,
 			);
