@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		422EE7071C1E553300EB76D4 /* EUExUnionPay.mm in Sources */ = {isa = PBXBuildFile; fileRef = 422EE7061C1E553300EB76D4 /* EUExUnionPay.mm */; };
 		424ACE981C23D8D000EEC1F8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424ACE971C23D8D000EEC1F8 /* Security.framework */; };
+		4294F1A41D2A6E600042A631 /* AppCanKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4294F1A31D2A6E600042A631 /* AppCanKit.framework */; };
 		42FFEF061C1FA0EF00294DE1 /* libUPPayPlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FFEF051C1FA0EF00294DE1 /* libUPPayPlugin.a */; };
 /* End PBXBuildFile section */
 
@@ -16,26 +17,10 @@
 		422EE7011C1E553300EB76D4 /* libuexUnionPay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuexUnionPay.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		422EE7041C1E553300EB76D4 /* EUExUnionPay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EUExUnionPay.h; sourceTree = "<group>"; };
 		422EE7061C1E553300EB76D4 /* EUExUnionPay.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EUExUnionPay.mm; sourceTree = "<group>"; };
-		422EE70E1C1E556D00EB76D4 /* EUExBase+Bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EUExBase+Bundle.h"; sourceTree = "<group>"; };
-		422EE70F1C1E556D00EB76D4 /* EUExBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBase.h; sourceTree = "<group>"; };
-		422EE7101C1E556D00EB76D4 /* EUExBaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBaseDefine.h; sourceTree = "<group>"; };
-		422EE7111C1E556D00EB76D4 /* EUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUtility.h; sourceTree = "<group>"; };
-		422EE7121C1E556D00EB76D4 /* WidgetOneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetOneDelegate.h; sourceTree = "<group>"; };
-		422EE7151C1E558D00EB76D4 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
-		422EE7161C1E558D00EB76D4 /* JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONParser.h; sourceTree = "<group>"; };
-		422EE7171C1E558D00EB76D4 /* MD5Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5Digest.h; sourceTree = "<group>"; };
-		422EE7181C1E558D00EB76D4 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
-		422EE7191C1E558D00EB76D4 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
-		422EE71A1C1E558D00EB76D4 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
-		422EE71B1C1E558D00EB76D4 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
-		422EE71C1C1E558D00EB76D4 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
-		422EE71D1C1E558D00EB76D4 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		422EE71E1C1E558D00EB76D4 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		422EE7291C1E569800EB76D4 /* UPPayPluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPayPluginDelegate.h; sourceTree = "<group>"; };
-		422EE72B1C1E611F00EB76D4 /* EBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBrowserView.h; sourceTree = "<group>"; };
-		422EE72C1C1E613F00EB76D4 /* EBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBrowserController.h; sourceTree = "<group>"; };
-		422EE72D1C1E615600EB76D4 /* ACEBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACEBaseViewController.h; sourceTree = "<group>"; };
 		424ACE971C23D8D000EEC1F8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4294F1A31D2A6E600042A631 /* AppCanKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCanKit.framework; sourceTree = "<group>"; };
 		42FFEF041C1FA0E700294DE1 /* UPPayPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPayPlugin.h; sourceTree = "<group>"; };
 		42FFEF051C1FA0EF00294DE1 /* libUPPayPlugin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUPPayPlugin.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,6 +31,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				424ACE981C23D8D000EEC1F8 /* Security.framework in Frameworks */,
+				4294F1A41D2A6E600042A631 /* AppCanKit.framework in Frameworks */,
 				42FFEF061C1FA0EF00294DE1 /* libUPPayPlugin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,52 +60,20 @@
 			isa = PBXGroup;
 			children = (
 				422EE7131C1E558D00EB76D4 /* sourceCode */,
-				422EE70D1C1E556D00EB76D4 /* engineHeader */,
 				422EE7041C1E553300EB76D4 /* EUExUnionPay.h */,
 				422EE7061C1E553300EB76D4 /* EUExUnionPay.mm */,
 			);
 			path = EUExUnionPay;
 			sourceTree = "<group>";
 		};
-		422EE70D1C1E556D00EB76D4 /* engineHeader */ = {
-			isa = PBXGroup;
-			children = (
-				422EE72D1C1E615600EB76D4 /* ACEBaseViewController.h */,
-				422EE72C1C1E613F00EB76D4 /* EBrowserController.h */,
-				422EE72B1C1E611F00EB76D4 /* EBrowserView.h */,
-				422EE70E1C1E556D00EB76D4 /* EUExBase+Bundle.h */,
-				422EE70F1C1E556D00EB76D4 /* EUExBase.h */,
-				422EE7101C1E556D00EB76D4 /* EUExBaseDefine.h */,
-				422EE7111C1E556D00EB76D4 /* EUtility.h */,
-				422EE7121C1E556D00EB76D4 /* WidgetOneDelegate.h */,
-			);
-			path = engineHeader;
-			sourceTree = "<group>";
-		};
 		422EE7131C1E558D00EB76D4 /* sourceCode */ = {
 			isa = PBXGroup;
 			children = (
+				4294F1A31D2A6E600042A631 /* AppCanKit.framework */,
 				422EE7231C1E568C00EB76D4 /* libs */,
-				422EE7141C1E558D00EB76D4 /* JSON */,
 				422EE71E1C1E558D00EB76D4 /* PrefixHeader.pch */,
 			);
 			path = sourceCode;
-			sourceTree = "<group>";
-		};
-		422EE7141C1E558D00EB76D4 /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				422EE7151C1E558D00EB76D4 /* JSON.h */,
-				422EE7161C1E558D00EB76D4 /* JSONParser.h */,
-				422EE7171C1E558D00EB76D4 /* MD5Digest.h */,
-				422EE7181C1E558D00EB76D4 /* NSObject+SBJSON.h */,
-				422EE7191C1E558D00EB76D4 /* NSString+SBJSON.h */,
-				422EE71A1C1E558D00EB76D4 /* SBJSON.h */,
-				422EE71B1C1E558D00EB76D4 /* SBJsonBase.h */,
-				422EE71C1C1E558D00EB76D4 /* SBJsonParser.h */,
-				422EE71D1C1E558D00EB76D4 /* SBJsonWriter.h */,
-			);
-			path = JSON;
 			sourceTree = "<group>";
 		};
 		422EE7231C1E568C00EB76D4 /* libs */ = {
@@ -278,6 +232,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexUnionPay";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EUExUnionPay/sourceCode",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EUExUnionPay/sourceCode/libs",
@@ -293,6 +251,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexUnionPay";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EUExUnionPay/sourceCode",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EUExUnionPay/sourceCode/libs",

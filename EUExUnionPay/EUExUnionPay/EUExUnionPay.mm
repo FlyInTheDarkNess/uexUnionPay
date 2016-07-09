@@ -7,13 +7,12 @@
 //
 
 #import "EUExUnionPay.h"
-#import "JSON.h"
-#import "EBrowserView.h"
-#import "EBrowserController.h"
+
 #import "UPPayPlugin.h"
 #import "UPPayPluginDelegate.h"
-#import "EUtility.h"
+#import <AppCanKit/ACEXTScope.h>
 @interface EUExUnionPay()<UPPayPluginDelegate>
+@property (nonatomic,strong)ACJSFunctionRef *cb;
 @end
 
 
@@ -23,13 +22,14 @@
 
 #pragma mark - EUExBase Method
 
-- (instancetype)initWithBrwView:(EBrowserView *)eInBrwView{
-    self=[super initWithBrwView:eInBrwView];
-    if(self){
-        
+- (instancetype)initWithWebViewEngine:(id<AppCanWebViewEngineObject>)engine
+{
+    self = [super initWithWebViewEngine:engine];
+    if (self) {
     }
     return self;
 }
+
 
 - (void)clean{
     
@@ -42,19 +42,16 @@
 #pragma mark - API
 
 -(void)startPay:(NSMutableArray *)inArguments{
-    if([inArguments count] < 1){
+    
+    ACArgsUnpack(NSDictionary *info,ACJSFunctionRef *cb) = inArguments;
+    NSString *orderInfo = stringArg(info[@"orderInfo"]);
+    NSString *mode = stringArg(info[@"mode"]);
+    if (!orderInfo || !mode) {
         return;
     }
-    id info = [inArguments[0] JSONValue];
-    if(!info || ![info isKindOfClass:[NSDictionary class]]){
-        return;
-    }
-    if(!info[@"orderInfo"]||!info[@"mode"]){
-        return;
-    }
-    NSString *orderInfo = info[@"orderInfo"];
-    NSString *mode = info[@"mode"];
-    [UPPayPlugin startPay:orderInfo mode:mode viewController:self.meBrwView.meBrwCtrler delegate:self];
+    self.cb = cb;
+    
+    [UPPayPlugin startPay:orderInfo mode:mode viewController:[self.webViewEngine viewController] delegate:self];
     
 }
 
@@ -64,30 +61,29 @@
 
 
 -(void)UPPayPluginResult:(NSString*)result{
+    
+    __block NSInteger ret = -2;
+    @onExit{
+        NSDictionary *resultDict = @{@"payResult":@(ret)};
+        [self.webViewEngine callbackWithFunctionKeyPath:@"uexUnionPay.cbStartPay" arguments:ACArgsPack(resultDict.ac_JSONFragment)];
+        [self.cb executeWithArguments:ACArgsPack(resultDict)];
+        self.cb = nil;
+    };
+    
+    
+    
     if([result isEqual:@"success"]){
-        [self cbStartPay:0];
-        return;
+        ret = 0;
     }
     if([result isEqual:@"fail"]){
-        [self cbStartPay:1];
-        return;
+        ret = 1;
     }
     if([result isEqual:@"cancel"]){
-        [self cbStartPay:-1];
-        return;
+        ret = -1;
     }
-    [self cbStartPay:-2];
-    
 }
 
 #pragma mark - uex callback
 
--(void)cbStartPay:(NSInteger)result{
-    [EUtility uexPlugin:@"uexUnionPay"
-         callbackByName:@"cbStartPay"
-             withObject:@{@"payResult":@(result)}
-                andType:uexPluginCallbackWithJsonString
-               inTarget:self.meBrwView];
-}
 
 @end
