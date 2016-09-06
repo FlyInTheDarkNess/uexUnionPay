@@ -66,7 +66,7 @@
     @onExit{
         NSDictionary *resultDict = @{@"payResult":@(ret)};
         [self.webViewEngine callbackWithFunctionKeyPath:@"uexUnionPay.cbStartPay" arguments:ACArgsPack(resultDict.ac_JSONFragment)];
-        [self.cb executeWithArguments:ACArgsPack(resultDict)];
+        [self.cb executeWithArguments:ACArgsPack(@(ret))];
         self.cb = nil;
     };
     
