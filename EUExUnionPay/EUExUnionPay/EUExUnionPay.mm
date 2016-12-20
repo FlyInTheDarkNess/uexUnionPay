@@ -8,11 +8,10 @@
 
 #import "EUExUnionPay.h"
 
-#import "UPPayPlugin.h"
-#import "UPPayPluginDelegate.h"
+#import "UPPaymentControl.h"
 #import <AppCanKit/ACEXTScope.h>
-@interface EUExUnionPay()<UPPayPluginDelegate>
-@property (nonatomic,strong)ACJSFunctionRef *cb;
+@interface EUExUnionPay()<AppCanApplicationEventObserver>
+@property (nonatomic,readonly)NSString *appURLScheme;
 @end
 
 
@@ -22,8 +21,34 @@
 
 #pragma mark - EUExBase Method
 
-- (instancetype)initWithWebViewEngine:(id<AppCanWebViewEngineObject>)engine
-{
+static void (^_globalCallbackBlock)(NSNumber *result) = nil;
+
+
++ (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    [[UPPaymentControl defaultControl] handlePaymentResult:url completeBlock:^(NSString *code, NSDictionary *data) {
+        NSNumber *ret = nil;
+        if([code isEqual:@"success"]){
+            ret = @0;
+        }
+        if([code isEqual:@"fail"]){
+            ret = @1;
+        }
+        if([code isEqual:@"cancel"]){
+            ret = @-1;
+        }
+        if (!ret) {
+            return;
+        }
+        if (_globalCallbackBlock) {
+            _globalCallbackBlock(ret);
+        }
+    }];
+    return YES;
+}
+
+
+
+- (instancetype)initWithWebViewEngine:(id<AppCanWebViewEngineObject>)engine{
     self = [super initWithWebViewEngine:engine];
     if (self) {
     }
@@ -39,6 +64,17 @@
     [self clean];
 }
 
+
+- (NSString *)appURLScheme{
+    static NSString *scheme = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        NSDictionary *schemeInfo = [[NSBundle mainBundle].infoDictionary[@"CFBundleURLTypes"] firstObject];
+        scheme = [schemeInfo[@"CFBundleURLSchemes"] firstObject];
+    });
+    return scheme;
+}
+
 #pragma mark - API
 
 -(void)startPay:(NSMutableArray *)inArguments{
@@ -46,44 +82,22 @@
     ACArgsUnpack(NSDictionary *info,ACJSFunctionRef *cb) = inArguments;
     NSString *orderInfo = stringArg(info[@"orderInfo"]);
     NSString *mode = stringArg(info[@"mode"]);
-    if (!orderInfo || !mode) {
-        return;
-    }
-    self.cb = cb;
+    UEX_PARAM_GUARD_NOT_NIL(orderInfo);
+    UEX_PARAM_GUARD_NOT_NIL(mode)
     
-    [UPPayPlugin startPay:orderInfo mode:mode viewController:[self.webViewEngine viewController] delegate:self];
-    
-}
-
-
-#pragma mark - UPPayPluginDelegate
-
-
-
--(void)UPPayPluginResult:(NSString*)result{
-    
-    __block NSInteger ret = -2;
-    @onExit{
-        NSDictionary *resultDict = @{@"payResult":@(ret)};
+    @weakify(self);
+    _globalCallbackBlock = ^(NSNumber *ret){
+        @strongify(self);
+        NSDictionary *resultDict = @{@"payResult":ret};
         [self.webViewEngine callbackWithFunctionKeyPath:@"uexUnionPay.cbStartPay" arguments:ACArgsPack(resultDict.ac_JSONFragment)];
-        [self.cb executeWithArguments:ACArgsPack(@(ret))];
-        self.cb = nil;
+        [cb executeWithArguments:ACArgsPack(ret)];
     };
     
+    [[UPPaymentControl defaultControl] startPay:orderInfo fromScheme:self.appURLScheme mode:mode viewController:[self.webViewEngine viewController]];
     
-    
-    if([result isEqual:@"success"]){
-        ret = 0;
-    }
-    if([result isEqual:@"fail"]){
-        ret = 1;
-    }
-    if([result isEqual:@"cancel"]){
-        ret = -1;
-    }
 }
 
-#pragma mark - uex callback
+
 
 
 @end
