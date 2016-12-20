@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		422EE7071C1E553300EB76D4 /* EUExUnionPay.mm in Sources */ = {isa = PBXBuildFile; fileRef = 422EE7061C1E553300EB76D4 /* EUExUnionPay.mm */; };
+		423FD28C1E04D14500131617 /* libPaymentControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 423FD28B1E04D14500131617 /* libPaymentControl.a */; };
 		424ACE981C23D8D000EEC1F8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424ACE971C23D8D000EEC1F8 /* Security.framework */; };
-		4294F1A41D2A6E600042A631 /* AppCanKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4294F1A31D2A6E600042A631 /* AppCanKit.framework */; };
-		42FFEF061C1FA0EF00294DE1 /* libUPPayPlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FFEF051C1FA0EF00294DE1 /* libUPPayPlugin.a */; };
+		4258FFC41E092C3100765FE5 /* AppCanKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4258FFC31E092C3100765FE5 /* AppCanKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,11 +18,10 @@
 		422EE7041C1E553300EB76D4 /* EUExUnionPay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EUExUnionPay.h; sourceTree = "<group>"; };
 		422EE7061C1E553300EB76D4 /* EUExUnionPay.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EUExUnionPay.mm; sourceTree = "<group>"; };
 		422EE71E1C1E558D00EB76D4 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		422EE7291C1E569800EB76D4 /* UPPayPluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPayPluginDelegate.h; sourceTree = "<group>"; };
+		423FD28A1E04D13B00131617 /* UPPaymentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
+		423FD28B1E04D14500131617 /* libPaymentControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
 		424ACE971C23D8D000EEC1F8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		4294F1A31D2A6E600042A631 /* AppCanKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCanKit.framework; sourceTree = "<group>"; };
-		42FFEF041C1FA0E700294DE1 /* UPPayPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPayPlugin.h; sourceTree = "<group>"; };
-		42FFEF051C1FA0EF00294DE1 /* libUPPayPlugin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUPPayPlugin.a; sourceTree = "<group>"; };
+		4258FFC31E092C3100765FE5 /* AppCanKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCanKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,8 +30,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				424ACE981C23D8D000EEC1F8 /* Security.framework in Frameworks */,
-				4294F1A41D2A6E600042A631 /* AppCanKit.framework in Frameworks */,
-				42FFEF061C1FA0EF00294DE1 /* libUPPayPlugin.a in Frameworks */,
+				4258FFC41E092C3100765FE5 /* AppCanKit.framework in Frameworks */,
+				423FD28C1E04D14500131617 /* libPaymentControl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +68,7 @@
 		422EE7131C1E558D00EB76D4 /* sourceCode */ = {
 			isa = PBXGroup;
 			children = (
-				4294F1A31D2A6E600042A631 /* AppCanKit.framework */,
+				4258FFC31E092C3100765FE5 /* AppCanKit.framework */,
 				422EE7231C1E568C00EB76D4 /* libs */,
 				422EE71E1C1E558D00EB76D4 /* PrefixHeader.pch */,
 			);
@@ -79,9 +78,8 @@
 		422EE7231C1E568C00EB76D4 /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				42FFEF051C1FA0EF00294DE1 /* libUPPayPlugin.a */,
-				42FFEF041C1FA0E700294DE1 /* UPPayPlugin.h */,
-				422EE7291C1E569800EB76D4 /* UPPayPluginDelegate.h */,
+				423FD28B1E04D14500131617 /* libPaymentControl.a */,
+				423FD28A1E04D13B00131617 /* UPPaymentControl.h */,
 			);
 			path = libs;
 			sourceTree = "<group>";
