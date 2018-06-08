@@ -7,19 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		117CE38B20CA5DA1008FC133 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117CE38A20CA5DA1008FC133 /* CFNetwork.framework */; };
+		117CE38D20CA5DAB008FC133 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117CE38C20CA5DAB008FC133 /* SystemConfiguration.framework */; };
+		117CE38F20CA5E0D008FC133 /* libPaymentControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 117CE38E20CA5E0D008FC133 /* libPaymentControl.a */; };
+		117CE39B20CA6DB7008FC133 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 117CE39420CA650B008FC133 /* libz.1.dylib */; };
 		422EE7071C1E553300EB76D4 /* EUExUnionPay.mm in Sources */ = {isa = PBXBuildFile; fileRef = 422EE7061C1E553300EB76D4 /* EUExUnionPay.mm */; };
-		423FD28C1E04D14500131617 /* libPaymentControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 423FD28B1E04D14500131617 /* libPaymentControl.a */; };
 		424ACE981C23D8D000EEC1F8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424ACE971C23D8D000EEC1F8 /* Security.framework */; };
 		4258FFC41E092C3100765FE5 /* AppCanKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4258FFC31E092C3100765FE5 /* AppCanKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		117CE38A20CA5DA1008FC133 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		117CE38C20CA5DAB008FC133 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		117CE38E20CA5E0D008FC133 /* libPaymentControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
+		117CE39020CA5E1C008FC133 /* UPPaymentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
+		117CE39220CA600D008FC133 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		117CE39420CA650B008FC133 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		422EE7011C1E553300EB76D4 /* libuexUnionPay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuexUnionPay.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		422EE7041C1E553300EB76D4 /* EUExUnionPay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EUExUnionPay.h; sourceTree = "<group>"; };
 		422EE7061C1E553300EB76D4 /* EUExUnionPay.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EUExUnionPay.mm; sourceTree = "<group>"; };
 		422EE71E1C1E558D00EB76D4 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		423FD28A1E04D13B00131617 /* UPPaymentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
-		423FD28B1E04D14500131617 /* libPaymentControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
 		424ACE971C23D8D000EEC1F8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4258FFC31E092C3100765FE5 /* AppCanKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCanKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -29,21 +36,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117CE39B20CA6DB7008FC133 /* libz.1.dylib in Frameworks */,
+				117CE38D20CA5DAB008FC133 /* SystemConfiguration.framework in Frameworks */,
+				117CE38B20CA5DA1008FC133 /* CFNetwork.framework in Frameworks */,
+				117CE38F20CA5E0D008FC133 /* libPaymentControl.a in Frameworks */,
 				424ACE981C23D8D000EEC1F8 /* Security.framework in Frameworks */,
 				4258FFC41E092C3100765FE5 /* AppCanKit.framework in Frameworks */,
-				423FD28C1E04D14500131617 /* libPaymentControl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		117CE38720CA5D7B008FC133 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				117CE39420CA650B008FC133 /* libz.1.dylib */,
+				117CE39220CA600D008FC133 /* libz.tbd */,
+				117CE38C20CA5DAB008FC133 /* SystemConfiguration.framework */,
+				117CE38A20CA5DA1008FC133 /* CFNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		422EE6F81C1E553300EB76D4 = {
 			isa = PBXGroup;
 			children = (
 				424ACE971C23D8D000EEC1F8 /* Security.framework */,
 				422EE7031C1E553300EB76D4 /* EUExUnionPay */,
 				422EE7021C1E553300EB76D4 /* Products */,
+				117CE38720CA5D7B008FC133 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,8 +100,8 @@
 		422EE7231C1E568C00EB76D4 /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				423FD28B1E04D14500131617 /* libPaymentControl.a */,
-				423FD28A1E04D13B00131617 /* UPPaymentControl.h */,
+				117CE39020CA5E1C008FC133 /* UPPaymentControl.h */,
+				117CE38E20CA5E0D008FC133 /* libPaymentControl.a */,
 			);
 			path = libs;
 			sourceTree = "<group>";

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <uexplugins>
-    <plugin uexName="uexUnionPay" version="4.0.1" build="1">
+    <plugin uexName="uexUnionPay" version="4.0.2" build="1">
     	<info>1: SDK更新,支持银联钱包支付,支持ATS</info>
     	<build>0: 银联支付插件 for iOS</build>
     </plugin>

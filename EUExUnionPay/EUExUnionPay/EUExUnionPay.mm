@@ -94,7 +94,10 @@ static void (^_globalCallbackBlock)(NSNumber *result) = nil;
     };
     
     [[UPPaymentControl defaultControl] startPay:orderInfo fromScheme:self.appURLScheme mode:mode viewController:[self.webViewEngine viewController]];
-    
+}
+
+-(void)helloWorld:(NSMutableArray *)inArguments{
+    NSLog(@"helloErro");
 }
 
 
